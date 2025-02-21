@@ -1,198 +1,151 @@
-/* Algemene opmaak */
+/* Algemene Reset */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;  /* Lichtgrijs voor de achtergrond */
+    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-/* Header */
+h1, h2, h3 {
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
 header {
-    background-color: #212529;  /* Donkergrijs voor de header */
-    color: #ffffff;
+    background-color: #111;
+    color: #fff;
     padding: 20px 0;
-    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #ffc107;  /* Geel voor de titel */
+    font-size: 2.5em;
+    margin: 0;
 }
 
-nav ul {
-    list-style-type: none;
-    margin-top: 20px;
-    padding: 0;
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-nav ul li {
-    display: inline;
+header nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: #ffffff;  /* Wit voor de links */
-    font-size: 1.1rem;
-    font-weight: 500;
-    transition: color 0.3s;
+header nav ul li a {
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-nav ul li a:hover {
-    color: #ffc107;  /* Geel bij hover */
-}
-
-/* Hero Sectie (Introductie) */
 .hero {
-    background-color: #28a745;  /* Groene achtergrond voor de hero sectie */
-    color: #ffffff;
-    padding: 80px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/luxury-taxi.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    color: #fff;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-.belknop {
-    background-color: #ffc107;  /* Geel voor de belknop */
-    color: #212529;  /* Donkergrijs voor tekst */
+.btn-primary {
+    background-color: #e6b800;
     padding: 15px 30px;
-    font-size: 1.1rem;
-    border-radius: 5px;
+    border-radius: 50px;
+    font-size: 1.2em;
     text-transform: uppercase;
     transition: background-color 0.3s;
 }
 
-.belknop:hover {
-    background-color: #e0a800;  /* Donkerder geel bij hover */
+.btn-primary:hover {
+    background-color: #c49e00;
 }
 
-/* Content Sectie */
-section.content {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.about {
+    padding: 50px 0;
+    background-color: #fff;
 }
 
-section.content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-section.content p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-section.content ul {
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-section.content ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-/* Formulieren */
-form input[type="text"],
-form input[type="tel"],
-form input[type="datetime-local"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 15px;
-    font-size: 1rem;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: border-color 0.3s;
-}
-
-form input[type="text"]:focus,
-form input[type="tel"]:focus,
-form input[type="datetime-local"]:focus,
-form input[type="email"]:focus,
-form textarea:focus {
-    border-color: #28a745;  /* Groene rand bij focus */
-}
-
-form input[type="submit"] {
-    background-color: #28a745;  /* Groene knop voor submit */
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-form input[type="submit"]:hover {
-    background-color: #218838;  /* Donkergroen bij hover */
-}
-
-/* Footer */
-footer {
-    background-color: #212529;  /* Donkergrijs voor footer */
-    color: white;
-    padding: 20px 0;
+.about h2 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #f3f3f3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.service-item h3 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
 }
 
 footer a {
-    color: #ffc107;  /* Gele link in de footer */
-    text-decoration: none;
+    color: #e6b800;
+    font-weight: bold;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #c49e00;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
 
 
