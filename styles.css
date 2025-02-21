@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;  /* Lichtgrijs voor de achtergrond */
     color: #333;
     line-height: 1.6;
 }
@@ -19,8 +19,8 @@ a {
 
 /* Header */
 header {
-    background-color: #343a40;
-    color: white;
+    background-color: #212529;  /* Donkergrijs voor de header */
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
@@ -28,6 +28,7 @@ header {
 header h1 {
     font-size: 2.5rem;
     font-weight: 600;
+    color: #ffc107;  /* Geel voor de titel */
 }
 
 nav ul {
@@ -42,20 +43,20 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;  /* Wit voor de links */
     font-size: 1.1rem;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #28a745;
+    color: #ffc107;  /* Geel bij hover */
 }
 
 /* Hero Sectie (Introductie) */
 .hero {
-    background-color: #007bff;
-    color: white;
+    background-color: #28a745;  /* Groene achtergrond voor de hero sectie */
+    color: #ffffff;
     padding: 80px 20px;
     text-align: center;
 }
@@ -71,8 +72,8 @@ nav ul li a:hover {
 }
 
 .belknop {
-    background-color: #28a745;
-    color: white;
+    background-color: #ffc107;  /* Geel voor de belknop */
+    color: #212529;  /* Donkergrijs voor tekst */
     padding: 15px 30px;
     font-size: 1.1rem;
     border-radius: 5px;
@@ -81,15 +82,15 @@ nav ul li a:hover {
 }
 
 .belknop:hover {
-    background-color: #218838;
+    background-color: #e0a800;  /* Donkerder geel bij hover */
 }
 
-/* Content Section */
+/* Content Sectie */
 section.content {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -134,11 +135,11 @@ form input[type="tel"]:focus,
 form input[type="datetime-local"]:focus,
 form input[type="email"]:focus,
 form textarea:focus {
-    border-color: #007bff;
+    border-color: #28a745;  /* Groene rand bij focus */
 }
 
 form input[type="submit"] {
-    background-color: #28a745;
+    background-color: #28a745;  /* Groene knop voor submit */
     color: white;
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -149,12 +150,12 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #218838;  /* Donkergroen bij hover */
 }
 
 /* Footer */
 footer {
-    background-color: #343a40;
+    background-color: #212529;  /* Donkergrijs voor footer */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -162,7 +163,7 @@ footer {
 }
 
 footer a {
-    color: #28a745;
+    color: #ffc107;  /* Gele link in de footer */
     text-decoration: none;
 }
 
@@ -193,4 +194,5 @@ footer a:hover {
         margin-bottom: 10px;
     }
 }
+
 
