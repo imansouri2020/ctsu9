@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserveren - Comfort Taxi Service Utrecht</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Comfort Taxi Service Utrecht</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="luchthaventransport.html">Luchthaventransport</a></li>
+                <li><a href="zakelijkvervoer.html">Zakelijk Vervoer</a></li>
+                <li><a href="reserveren.html">Reserveren</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Reserveren</h2>
+        <p>Plan hier uw taxi rit. Vul het onderstaande formulier in om een reservering te maken.</p>
+
+        <!-- Reservatieformulier -->
+        <form action="submit_reservation.php" method="POST">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Telefoonnummer:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Datum en Tijd:</label>
+            <input type="datetime-local" id="date" name="date" required>
+
+            <label for="pickup_location">Ophaallocatie:</label>
+            <input type="text" id="pickup_location" name="pickup_location" required>
+
+            <label for="dropoff_location">Bestemming:</label>
+            <input type="text" id="dropoff_location" name="dropoff_location" required>
+
+            <input type="submit" value="Reserveren">
+        </form>
+
+        <h3>Bekijk de Kaart:</h3>
+        <!-- Kaart integratie, bijvoorbeeld Google Maps -->
+        <div id="map"></div>
+
+    </section>
+
+    <footer>
+        <p>Comfort Taxi Service Utrecht | Cornelis Mertensstraat, Utrecht</p>
+        <p><a href="tel:+31640777840">0640777840</a> | <a href="mailto:info@comforttaxi.nl">info@comforttaxi.nl</a></p>
+    </footer>
+</body>
+</html>
