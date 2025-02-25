@@ -3,62 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Comfort Taxi Service Utrecht</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
-        <h1>Comfort Taxi Service Utrecht</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="luchthaventransport.html">Luchthaventransport</a></li>
-                <li><a href="zakelijkvervoer.html">Zakelijk Vervoer</a></li>
-                <li><a href="reserveren.html">Reserveren</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <h1>Comfort Taxi Service Utrecht</h1>
+        </div>
+        <div class="contact">
+            <a href="tel:+31640777840" class="call-btn">Bel Nu: +31 640 777 840</a>
+        </div>
     </header>
 
-    <!-- Hero Sectie -->
-    <section class="hero">
-        <h2>De snelste en meest comfortabele taxi's in Utrecht</h2>
-        <p>Voor al uw ritten, of het nu gaat om zakelijk vervoer of luchthaventransport, Comfort Taxi Service Utrecht zorgt voor een comfortabele reis.</p>
-        
-        <!-- Telefoonnummer als tekst -->
-        <p class="phone-text">Bel nu: <a href="tel:+31640777840">+31 6 40777840</a></p>
-        
-        <!-- Belknop -->
-        <a href="tel:+31640777840" class="belknop">Bel nu</a>
+    <section id="about">
+        <h2>Betrouwbare & Luxueuze Taxi Service</h2>
+        <p>Wij bieden comfortabele en premium vervoersopties in Utrecht, voor zowel zakelijke als persoonlijke ritten.</p>
     </section>
 
-    <!-- Content Sectie -->
-    <section class="content">
+    <section id="services">
         <h2>Onze Diensten</h2>
-        <p>Wij bieden verschillende vormen van taxi-diensten aan. Of het nu gaat om snel vervoer naar de luchthaven of betrouwbaar zakelijk vervoer, wij zorgen ervoor dat u op tijd en comfortabel op uw bestemming aankomt.</p>
-        
-        <h3>Luchthaventransport</h3>
-        <p>Comfort Taxi Service biedt betrouwbare en comfortabele ritten naar en van de luchthavens in Nederland.</p>
-        
-        <h3>Zakelijk Vervoer</h3>
-        <p>Voor zakelijke klanten bieden wij luxe vervoer voor vergaderingen, afspraken en evenementen.</p>
-
-        <h3>Speciale Aanbiedingen</h3>
         <ul>
-            <li>Gratis Wi-Fi in de taxi's</li>
-            <li>Speciale kortingen voor zakelijke klanten</li>
-            <li>24/7 service beschikbaar</li>
+            <li>Luchthaven Transfers</li>
+            <li>Zakelijk Vervoer</li>
+            <li>Groepsvervoer</li>
+            <li>Elektrische Taxi Service</li>
         </ul>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Comfort Taxi Service Utrecht | Cornelis Mertensstraat, Utrecht</p>
-        <p><a href="tel:+31640777840">+31 6 40777840</a> | <a href="mailto:info@comforttaxi.nl">info@comforttaxi.nl</a></p>
-    </footer>
+    <section id="booking">
+        <h2>Boek je Rit</h2>
+        <form action="mailto:i_mansouri2020@outlook.com" method="post" enctype="text/plain">
+            <label for="pickup">Ophaallocatie:</label>
+            <input type="text" id="pickup" name="pickup" required>
 
+            <label for="destination">Bestemming:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="date">Ophaaldatum:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Ophaaltijd:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Reserveer Nu</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Comfort Taxi Service Utrecht | Alle rechten voorbehouden</p>
+    </footer>
 </body>
 </html>
+
 
